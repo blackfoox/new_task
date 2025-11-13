@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load menu_tags %}
+{% block title %}Home{% endblock %}
+{% block menus %}
+  {{ block.super }}
+  <h2>Secondary navigation</h2>
+  {% draw_menu 'footer-menu' %}
+{% endblock %}
+{% block content %}
+  <p>Use the admin UI to add or reorder menu entries. Active nodes are highlighted automatically based on the current URL.</p>
+  <p>This demo page renders both the <code>main-menu</code> (header) and an additional <code>footer-menu</code> instance on the same template to show that multiple menus can coexist.</p>
+{% endblock %}

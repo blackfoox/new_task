@@ -1,0 +1,7 @@
+{% if nodes %}
+<nav class="menu" aria-label="{{ menu_title }}">
+  <ul class="menu__level menu__level--root">
+    {% include 'menus/menu_nodes.html' with nodes=nodes %}
+  </ul>
+</nav>
+{% endif %}

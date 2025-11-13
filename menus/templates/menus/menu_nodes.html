@@ -1,0 +1,10 @@
+{% for node in nodes %}
+<li class="menu__item {{ node.css_classes }}" data-depth="{{ node.depth }}">
+  <a href="{{ node.url }}" class="menu__link">{{ node.title }}</a>
+  {% if node.children and node.is_expanded %}
+  <ul class="menu__level menu__level--depth-{{ node.depth|add:1 }}">
+    {% include 'menus/menu_nodes.html' with nodes=node.children only %}
+  </ul>
+  {% endif %}
+</li>
+{% endfor %}

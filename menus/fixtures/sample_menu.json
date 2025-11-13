@@ -1,0 +1,139 @@
+[
+  {
+    "model": "menus.menu",
+    "pk": 1,
+    "fields": {
+      "title": "Main Navigation",
+      "slug": "main-menu",
+      "description": "Primary header menu",
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menu",
+    "pk": 2,
+    "fields": {
+      "title": "Footer Navigation",
+      "slug": "footer-menu",
+      "description": "Secondary menu for the footer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 1,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "title": "Home",
+      "named_url": "home",
+      "url": "",
+      "position": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 2,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "title": "About",
+      "named_url": "about",
+      "url": "",
+      "position": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 3,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "title": "Products",
+      "named_url": "products",
+      "url": "",
+      "position": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 4,
+    "fields": {
+      "menu": 1,
+      "parent": 3,
+      "title": "Software",
+      "named_url": "products_software",
+      "url": "",
+      "position": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 5,
+    "fields": {
+      "menu": 1,
+      "parent": 3,
+      "title": "Hardware",
+      "named_url": "products_hardware",
+      "url": "",
+      "position": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 6,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "title": "Contacts",
+      "named_url": "",
+      "url": "/contacts/",
+      "position": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 7,
+    "fields": {
+      "menu": 2,
+      "parent": null,
+      "title": "About",
+      "named_url": "about",
+      "url": "",
+      "position": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 8,
+    "fields": {
+      "menu": 2,
+      "parent": null,
+      "title": "Privacy",
+      "named_url": "privacy",
+      "url": "",
+      "position": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": 9,
+    "fields": {
+      "menu": 2,
+      "parent": null,
+      "title": "Contact",
+      "named_url": "",
+      "url": "/contacts/",
+      "position": 3,
+      "is_active": true
+    }
+  }
+]
